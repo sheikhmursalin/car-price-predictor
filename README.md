@@ -6,7 +6,7 @@ A machine learning web app built using **Python, Flask, and scikit-learn** that 
 
 ### 🔮 Live Demo
 
-> [👉 Click here to try it](https://car-price-predictor-rwv3.onrender.com) 
+> [👉 Click here to try it](https://car-price-predictor-t46f.onrender.com)
 
 ---
 
