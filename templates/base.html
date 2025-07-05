@@ -12,7 +12,19 @@
     <span class="navbar-brand mb-0 h1">🚗 Car Price Predictor</span>
   </div>
 </nav>
+
 <main class="container">{% block content %}{% endblock %}</main>
+
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<!-- ✅ Footer here -->
+<footer class="text-center py-3 mt-5 bg-light border-top">
+  <p class="mb-1">
+    🛠️ Made with ❤️ by
+    <a href="https://github.com/sheikhmursalin" target="_blank" class="text-decoration-none fw-bold">
+      Sheikh Mursalin
+    </a>
+  </p>
+  <small class="text-muted">© 2025 Car Price Predictor</small>
+</footer>
 </body>
 </html>
