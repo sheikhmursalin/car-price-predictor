@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Predict Price{% endblock %}
+{% block content %}
+<h4>Enter Car Details</h4>
+<form action="{{ url_for('predict') }}" method="post" class="row g-3">
+
+  <div class="col-md-6">
+    <label class="form-label">Company</label>
+    <select class="form-select" name="company" required>
+      {% for c in companies %}<option value="{{ c }}">{{ c }}</option>{% endfor %}
+    </select>
+  </div>
+
+  <div class="col-md-6">
+    <label class="form-label">Fuel Type</label>
+    <select class="form-select" name="fuel_type" required>
+      {% for f in fuel_types %}<option value="{{ f }}">{{ f }}</option>{% endfor %}
+    </select>
+  </div>
+
+  <div class="col-md-6">
+    <label class="form-label">Manufacturing Year</label>
+    <input type="number" name="year" class="form-control"
+           min="1990" max="{{ current_year }}" required>
+  </div>
+
+  <div class="col-md-6">
+    <label class="form-label">KMs Driven</label>
+    <input type="number" name="kms_driven" class="form-control" min="0" required>
+  </div>
+
+  <div class="col-12">
+    <button class="btn btn-success">Predict Price</button>
+  </div>
+</form>
+{% endblock %}

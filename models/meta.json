@@ -1,0 +1,35 @@
+{
+  "companies": [
+    "Audi",
+    "BMW",
+    "Chevrolet",
+    "Datsun",
+    "Fiat",
+    "Force",
+    "Ford",
+    "Hindustan",
+    "Honda",
+    "Hyundai",
+    "Jaguar",
+    "Jeep",
+    "Land",
+    "Mahindra",
+    "Maruti",
+    "Mercedes",
+    "Mini",
+    "Mitsubishi",
+    "Nissan",
+    "Renault",
+    "Skoda",
+    "Tata",
+    "Toyota",
+    "Volkswagen",
+    "Volvo"
+  ],
+  "fuel_types": [
+    "Diesel",
+    "LPG",
+    "Petrol"
+  ],
+  "trained_year": 2025
+}

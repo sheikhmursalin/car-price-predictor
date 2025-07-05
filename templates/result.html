@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Predicted{% endblock %}
+{% block content %}
+<div class="card shadow-sm p-4">
+  <h4>Predicted Selling Price</h4>
+  <h2 class="text-primary">{{ price }}</h2>
+  <p>
+    <strong>Company:</strong> {{ company }}<br>
+    <strong>Fuel:</strong> {{ fuel }}<br>
+    <strong>Year:</strong> {{ year }}<br>
+    <strong>KMs Driven:</strong> {{ kms }}
+  </p>
+  <a href="{{ url_for('index') }}" class="btn btn-link">Predict another</a>
+</div>
+{% endblock %}
